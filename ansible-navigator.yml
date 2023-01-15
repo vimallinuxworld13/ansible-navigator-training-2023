@@ -1,0 +1,12 @@
+ansible-navigator:
+  execution-environment:
+    image: quay.io/ansible/creator-ee:v0.9.1
+    pull:
+      policy: missing
+
+  ansible:
+    config:
+      path: ansible.cfg
+    inventory:
+     entries:
+     - lwinventory
